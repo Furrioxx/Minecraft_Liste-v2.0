@@ -74,9 +74,9 @@ function stack(n){
     }
 }
 
-// window.onbeforeunload = function(){
-//     return confirm()
-// }
+window.onbeforeunload = function(){
+    return confirm()
+}
 
 number.addEventListener("keyup", function(event) {
     event.preventDefault()
