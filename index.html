@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Liste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="begin" class="begin">
+        <h1>Nom de votre build</h1>
+        <input type="text" id="titleTable" autocomplete="off">
+        <input type="button" value="Créer" id="createBtn" onclick="create()">
+    </div>
+    <div class="hiden" id="hiden">
+        <input type="text" id="name1" placeholder="nom matériaux">
+        <input type="number" id="number" placeholder="quantité">
+        <input type="button" value="Ajouter" id="myButton" onclick="addTable()">
+        <ul id="autoCompleteListe">
+            
+        </ul>
+        <div class="flex">
+            <table id="table">
+                <thead>
+                    <th colspan="5" id="thInput"></th>
+                </thead>
+                <tbody id="tbody">
+                    <tr class="title">
+                        <td>Materiaux</td>
+                        <td>Nombre</td>
+                        <td>Nombre en stack</td>
+                        <td>Etat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
