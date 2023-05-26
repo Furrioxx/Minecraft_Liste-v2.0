@@ -1,0 +1,111 @@
+:root{
+    --fontRoboto : 'Roboto', sans-serif;
+    --color : #5171A5
+}
+
+body{
+    background-color: #ffe4c4;
+}
+
+.begin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+h1{
+    font-family: var(--fontRoboto);
+    font-size: 30px;
+    margin: 0;
+}
+
+input[type=text], input[type=number]{
+    width: 200px;
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0.5em 1em 0.5em 1em;
+}
+input[type=text]:focus, input[type=number]:focus{
+    outline: none;
+}
+
+input[type=button]{
+    width: 80px;
+    height: 35px;
+    padding: 0.5em 1em 0.5em 1em;
+    border: none;
+    background-color: var(--color);
+    color: white;
+    border-radius: 5px;
+    font-family: var(--fontRoboto);
+}
+input[type=button]:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.hiden{
+    display: none;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.trash{
+    border: none !important;
+}
+.trash:hover{
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin-top: 2.5em;
+    width: 500px;
+    font-family: var(--fontRoboto);
+}
+
+table,
+td {
+    text-align: center;
+    border: 1px solid #333;
+}
+td{
+    padding: 0 0.5em 0 0.5em;
+}
+
+thead{
+    height: 2em;
+    background-color: var(--color);
+    color: #fff;
+}
+
+ul {
+    margin-top: 0;
+    position: absolute;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+li{
+    text-align: center;
+    width: 200px;
+    padding: 0.5em 1em 0.5em 1em;
+    background-color: rgb(233, 231, 231);
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: var(--color);
+}
